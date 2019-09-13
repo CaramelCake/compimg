@@ -19,10 +19,7 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install --upgrade setuptools
-            pip install -r "docs/src/requirements.txt"
-            pip install wheel
-            pip install pytest
-            pip install flake8
+            pip install -r "dev-requirements.txt"
 
       - run:
           name: install
@@ -78,10 +75,7 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install --upgrade setuptools
-            pip install -r "docs/src/requirements.txt"
-            pip install wheel
-            pip install pytest
-            pip install flake8
+            pip install -r "dev-requirements.txt"
 
       - run:
           name: install
